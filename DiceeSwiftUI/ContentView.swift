@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var leftDiceNumber = 1
+    @State var rightDiceNumber = 2
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            BackGroundImage()
+            VStack {
+                Logo()
+                Spacer()
+                HStack {
+                    Dice(image: leftDiceNumber)
+                    Dice(image: rightDiceNumber)
+                }
+                .padding(.horizontal)
+                Spacer()
+                RollButton(leftDiceNumber: $leftDiceNumber, rightDiceNumber: $rightDiceNumber)
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ForEach(constants.devices, id: \.self) { device in
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: device))
+        }
     }
 }

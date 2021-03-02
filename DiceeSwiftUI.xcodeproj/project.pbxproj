@@ -13,6 +13,11 @@
 		CEF485E425EE151C00BFD028 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF485E325EE151C00BFD028 /* Preview Assets.xcassets */; };
 		CEF485EF25EE151C00BFD028 /* DiceeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF485EE25EE151C00BFD028 /* DiceeSwiftUITests.swift */; };
 		CEF485FA25EE151C00BFD028 /* DiceeSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF485F925EE151C00BFD028 /* DiceeSwiftUIUITests.swift */; };
+		CEF4860C25EE29B800BFD028 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4860B25EE29B800BFD028 /* Constants.swift */; };
+		CEF4861825EE2A3800BFD028 /* BackGroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4861725EE2A3800BFD028 /* BackGroundImage.swift */; };
+		CEF4861D25EE2F6700BFD028 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4861C25EE2F6700BFD028 /* Logo.swift */; };
+		CEF4862225EE2FE200BFD028 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4862125EE2FE200BFD028 /* Dice.swift */; };
+		CEF4862F25EE392300BFD028 /* RollButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4862E25EE392300BFD028 /* RollButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		CEF485F525EE151C00BFD028 /* DiceeSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceeSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF485F925EE151C00BFD028 /* DiceeSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceeSwiftUIUITests.swift; sourceTree = "<group>"; };
 		CEF485FB25EE151C00BFD028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF4860B25EE29B800BFD028 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEF4861725EE2A3800BFD028 /* BackGroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundImage.swift; sourceTree = "<group>"; };
+		CEF4861C25EE2F6700BFD028 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		CEF4862125EE2FE200BFD028 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		CEF4862E25EE392300BFD028 /* RollButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,8 @@
 		CEF485DB25EE151B00BFD028 /* DiceeSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4861325EE29F300BFD028 /* Components */,
+				CEF4860A25EE29A700BFD028 /* Constants */,
 				CEF485DC25EE151B00BFD028 /* DiceeSwiftUIApp.swift */,
 				CEF485DE25EE151B00BFD028 /* ContentView.swift */,
 				CEF485E025EE151C00BFD028 /* Assets.xcassets */,
@@ -128,6 +140,25 @@
 				CEF485FB25EE151C00BFD028 /* Info.plist */,
 			);
 			path = DiceeSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		CEF4860A25EE29A700BFD028 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4860B25EE29B800BFD028 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CEF4861325EE29F300BFD028 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4861725EE2A3800BFD028 /* BackGroundImage.swift */,
+				CEF4861C25EE2F6700BFD028 /* Logo.swift */,
+				CEF4862125EE2FE200BFD028 /* Dice.swift */,
+				CEF4862E25EE392300BFD028 /* RollButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF4862F25EE392300BFD028 /* RollButton.swift in Sources */,
 				CEF485DF25EE151B00BFD028 /* ContentView.swift in Sources */,
+				CEF4861D25EE2F6700BFD028 /* Logo.swift in Sources */,
 				CEF485DD25EE151B00BFD028 /* DiceeSwiftUIApp.swift in Sources */,
+				CEF4860C25EE29B800BFD028 /* Constants.swift in Sources */,
+				CEF4862225EE2FE200BFD028 /* Dice.swift in Sources */,
+				CEF4861825EE2A3800BFD028 /* BackGroundImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
